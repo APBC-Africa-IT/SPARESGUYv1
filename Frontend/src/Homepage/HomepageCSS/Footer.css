@@ -1,17 +1,135 @@
+.footer {
+  background-color: #000; /* Set the background color to black */
+  color: #fff; /* White text color for better contrast */
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex-basis: 22%; /* Adjust width for responsiveness */
+  margin-bottom: 20px;
+}
+
+.footer h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffb100; /* Set the section headers to yellow to match the design */
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffb100;
+}
+
 .footer ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #222; /* Darker background for the input */
+  color: #fff;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  background-color: #ffb100;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #e69500; /* Slight hover effect on the button */
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #444; /* Lighter line */
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  margin: 0 10px;
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ffb100; /* Highlighted text on hover */
+}
+
+.footer .logo-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer .logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.footer .contact-links a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .footer ul li {
-    margin-bottom: 10px;
+
+  .footer-section {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 20px;
   }
-  
-  .footer a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
+}

@@ -1,43 +1,77 @@
 
-.navbar.navbar-dark {
-    background-color: #88293b !important; /* Dark background color */
+.header-navbar {
+    background-color: #DDC3C3 !important;
+    padding: 10px 20px;
 }
 
-/* Navbar brand and links */
-.navbar-dark .navbar-brand, .navbar-dark .nav-link {
-    color: #ffffff !important; /* White text color */
-}
-
-/* Change the color of the links on hover */
-.navbar-dark .nav-link:hover {
-    color: #f8f9fa !important; /* Light gray color on hover */
-}
-
-/* Optional: Add some padding to the navbar links */
 .nav-link {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+.nav-link:hover {
+    color: #f8f9fa !important;
+    background-color: transparent;
 }
 
-/* Ensure navbar items are displayed horizontally */
-.navbar-nav {
-    flex-direction: row; /* Ensure items are in a row */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
 }
 
-/* Media queries for responsive design */
+.search-bar .form-control {
+    width: 250px;
+    border-radius: 0;
+    margin-right: 0.5rem;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.icons-bar .icon-btn {
+    background: none;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+    padding: 10px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item svg {
+    margin-right: 0.5rem;
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        padding: 0.5rem 1rem;
+    .search-bar {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
     }
-    .navbar-brand {
-        font-size: 1.2rem;
+    .search-bar .form-control {
+        width: 100%;
     }
-    .nav-link {
-        font-size: 0.9rem;
-    }
-}
 
-@media (min-width: 769px) {
-    .navbar {
-        padding: 1rem 2rem;
+    .icons-bar {
+        margin-top: 1rem;
     }
 }

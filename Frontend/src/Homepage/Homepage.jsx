@@ -1,12 +1,16 @@
 import React from 'react'
 import Banner from './Banner'
-import BrandLogos from './Brandlogos'
-import FeaturedProducts from './Featuredproducts'
-import Header from './Header'
+import BrandLogos from './BrandLogos'
+import FeaturedProducts from '../Products/FeaturedProducts'
+import Header from '../Constants/Header'
 import Testimonials from './Testimonials'
 import Statistics from './Statistics'
-import ProductListing from './Productlisting'
-import Footer from './Footer'
+import ProductListing from '../Products/ProductListing'
+import ProductDetails from '../Products/ProductDetails'
+import ReviewProducts from '../Products/ReviewProducts'
+import Footer from '../Constants/Footer'
+
+
 
  
 
@@ -18,6 +22,8 @@ const Homepage = () => {
       <BrandLogos />
       <FeaturedProducts />
       <ProductListing />
+      <ProductDetails />
+      <ReviewProducts/>
       <Testimonials />
       <Statistics />
       <Footer />
